@@ -60,141 +60,25 @@
     <div class="container">
         <h1>🌐 생성형 AI 및 도구 소개</h1>
         <div class="tools">
+            <!-- 기존 항목들... -->
+
+            <!-- Ollama 항목 추가 -->
             <div class="tool">
                 <div class="tool-title">
-                    <a href="https://www.canva.com" target="_blank">Canva</a>
+                    <a href="https://ollama.com" target="_blank">Ollama</a>
                 </div>
                 <ul>
-                    <li><strong>주요 기능/간단한 설명:</strong> 카드, 포스터, 프레젠테이션 등 다양한 디자인을 간편하게 제작</li>
+                    <li><strong>주요 기능/간단한 설명:</strong> 로컬에서 다양한 LLM 모델을 설치·실행·관리할 수 있는 플랫폼</li>
                     <li><strong>사용법 & 다운로드 & 주의사항:</strong><br>
-                        - 웹 브라우저 회원가입 → 템플릿 선택 후 드래그앤드롭 편집<br>
-                        - 설치 불필요, 모바일 앱(Android/iOS) 제공<br>
-                        - 무료 버전 일부 유료 요소 제한, 대용량 이미지 로딩 지연
+                        - 운영체제용 설치 파일 다운로드 후 설치<br>
+                        - 터미널에서 `ollama run <모델명> "<프롬프트>"` 명령으로 모델 자동 다운로드 및 실행<br>
+                        - 대형 모델은 GPU 메모리 요구량 높음, CPU 전용 시 성능 저하 주의
                     </li>
-                    <li><strong>제공사 & 유/무료 여부:</strong> Canva Inc., 기본 무료·Pro 유료</li>
+                    <li><strong>제공사 & 유/무료 여부:</strong> Ollama Inc., 플랫폼 및 기본 모델 무료, 상업용 고급 모델은 별도 과금</li>
                 </ul>
             </div>
 
-            <div class="tool">
-                <div class="tool-title">
-                    <a href="https://platform.openai.com/docs" target="_blank">ChatGPT Research</a>
-                </div>
-                <ul>
-                    <li><strong>주요 기능/간단한 설명:</strong> OpenAI API 및 모델 활용법, 예제 코드, 기술 문서 리소스</li>
-                    <li><strong>사용법 & 다운로드 & 주의사항:</strong><br>
-                        - 웹에서 문서 검색·예제 실행, API 키 발급 후 테스트 가능<br>
-                        - 문서 웹 제공, SDK는 npm/PyPI 통해 설치<br>
-                        - 최신 문서 참조 필수, API 쿼터·요금 정책 확인
-                    </li>
-                    <li><strong>제공사 & 유/무료 여부:</strong> OpenAI, 문서 무료·API 무료 체험 이후 유료</li>
-                </ul>
-            </div>
-
-            <div class="tool">
-                <div class="tool-title">
-                    <a href="https://github.com" target="_blank">GitHub</a>
-                </div>
-                <ul>
-                    <li><strong>주요 기능/간단한 설명:</strong> 소스 코드 버전 관리 및 협업 플랫폼</li>
-                    <li><strong>사용법 & 다운로드 & 주의사항:</strong><br>
-                        - 계정 생성 → 리포지토리 생성·커밋·풀 리퀘스트 활용<br>
-                        - Git 클라이언트 설치 필요(Windows/Mac/Linux)<br>
-                        - 민감 정보(예: API 키) 푸시 주의
-                    </li>
-                    <li><strong>제공사 & 유/무료 여부:</strong> GitHub, Inc., public 무료·private는 유료 플랜</li>
-                </ul>
-            </div>
-
-            <div class="tool">
-                <div class="tool-title">
-                    <a href="https://huggingface.co/spaces/ArtificialAnalysis/Text-to-Image-Leaderboard" target="_blank">ImageArena</a>
-                </div>
-                <ul>
-                    <li><strong>주요 기능/간단한 설명:</strong> 이미지 생성 및 관리용 웹 기반 툴</li>
-                    <li><strong>사용법 & 다운로드 & 주의사항:</strong><br>
-                        - 로그인 후 업로드·레이블링·검색 기능 활용<br>
-                        - 설치 불필요, 웹 서비스 형태<br>
-                        - 내부 네트워크 접근 권한 필요
-                    </li>
-                    <li><strong>제공사 & 유/무료 여부:</strong> 사내 개발, 전사 무료</li>
-                </ul>
-            </div>
-
-            <div class="tool">
-                <div class="tool-title">
-                    <a href="https://lmarena.ai/" target="_blank">LMArena</a>
-                </div>
-                <ul>
-                    <li><strong>주요 기능/간단한 설명:</strong> LLaMA 기반 모델 비교·실험 플랫폼</li>
-                    <li><strong>사용법 & 다운로드 & 주의사항:</strong><br>
-                        - 모델 업로드 → 벤치마크 실행·결과 확인<br>
-                        - CLI 도구 설치 가능, GitHub 소스 참조<br>
-                        - GPU 자원 필요, 라이선스 조건 확인
-                    </li>
-                    <li><strong>제공사 & 유/무료 여부:</strong> 커뮤니티 개발, 오픈소스 무료</li>
-                </ul>
-            </div>
-
-            <div class="tool">
-                <div class="tool-title">
-                    <a href="https://openai.com/sora" target="_blank">Sora</a>
-                </div>
-                <ul>
-                    <li><strong>주요 기능/간단한 설명:</strong> 텍스트 입력으로 영상 생성</li>
-                    <li><strong>사용법 & 다운로드 & 주의사항:</strong><br>
-                        - 웹 인터페이스에서 프롬프트 입력 후 생성<br>
-                        - 설치 불필요, 웹 서비스 제공<br>
-                        - 긴 영상 시 처리 시간 증가, 요금 정책 확인
-                    </li>
-                    <li><strong>제공사 & 유/무료 여부:</strong> OpenAI, 베타 무료·상용화 시 유료</li>
-                </ul>
-            </div>
-
-            <div class="tool">
-                <div class="tool-title">
-                    <a href="https://stability.ai/stable-diffusion" target="_blank">Stable Diffusion</a>
-                </div>
-                <ul>
-                    <li><strong>주요 기능/간단한 설명:</strong> 텍스트를 고해상도 이미지로 변환하는 AI 모델</li>
-                    <li><strong>사용법 & 다운로드 & 주의사항:</strong><br>
-                        - Hugging Face 또는 로컬 다운로드 후 API/로컬 스크립트 실행<br>
-                        - 모델 허브에서 무료 다운로드<br>
-                        - GPU 권장, 라이선스(CreativeML OpenRAIL-M) 준수
-                    </li>
-                    <li><strong>제공사 & 유/무료 여부:</strong> Stability AI·커뮤니티, 모델 무료·호스팅 유료</li>
-                </ul>
-            </div>
-
-            <div class="tool">
-                <div class="tool-title">
-                    <a href="https://www.suno.ai" target="_blank">Suno</a>
-                </div>
-                <ul>
-                    <li><strong>주요 기능/간단한 설명:</strong> 텍스트 기반 음악 생성 AI</li>
-                    <li><strong>사용법 & 다운로드 & 주의사항:</strong><br>
-                        - 웹/CLI에서 프롬프트 입력 후 생성<br>
-                        - 웹 기반, GitHub 소스 참조 가능<br>
-                        - 생성 음원 저작권 및 사용권 확인
-                    </li>
-                    <li><strong>제공사 & 유/무료 여부:</strong> SunoAI, 기본 무료·상업적 사용 유료</li>
-                </ul>
-            </div>
-
-            <div class="tool">
-                <div class="tool-title">
-                    <a href="https://chrome.google.com/webstore/search/custom%20cursor" target="_blank">Cursor</a>
-                </div>
-                <ul>
-                    <li><strong>주요 기능/간단한 설명:</strong> 브라우저 커서를 커스터마이징하는 확장 기능</li>
-                    <li><strong>사용법 & 다운로드 & 주의사항:</strong><br>
-                        - Chrome/Firefox 스토어에서 설치 → 이미지 업로드·애니메이션 설정<br>
-                        - 무료 제공<br>
-                        - 대용량 이미지 시 성능 저하, 최신 브라우저 권장
-                    </li>
-                    <li><strong>제공사 & 유/무료 여부:</strong> XYZ Solutions, 기본 무료·프리미엄 유료</li>
-                </ul>
-            </div>
-
+            <!-- CustomGPT 항목 -->
             <div class="tool">
                 <div class="tool-title">
                     <a href="https://chatgpt.com/gpts" target="_blank">CustomGPT</a>
@@ -209,7 +93,6 @@
                     <li><strong>제공사 & 유/무료 여부:</strong> OpenAI·Hugging Face, 무료 사용량·종량 과금</li>
                 </ul>
             </div>
-
         </div>
     </div>
 </body>
