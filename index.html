@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -8,13 +9,37 @@
             background-color: #121212;
             color: #ffffff;
             font-family: Arial, sans-serif;
-            padding: 2em;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
         }
         h1 {
             color: #4fc3f7;
+            margin-bottom: 1em;
+        }
+        .tool {
+            margin-bottom: 1.5em;
+            text-align: left;
+        }
+        .tool-title {
+            font-size: 1.8em;
+            margin-bottom: 0.3em;
+            color: #80d8ff;
         }
         ul {
+            list-style: none;
+            padding: 0;
             line-height: 1.8em;
+        }
+        li {
+            margin-bottom: 0.5em;
         }
         a {
             color: #80d8ff;
@@ -23,61 +48,151 @@
         a:hover {
             text-decoration: underline;
         }
-        .tool {
-            margin-bottom: 1.5em;
-        }
     </style>
 </head>
 <body>
-    <h1>🌐 생성형 AI 및 도구 소개</h1>
+    <div class="container">
+        <h1>🌐 생성형 AI 및 도구 소개</h1>
 
-    <div class="tool">
-        <strong>Canva</strong><br>
-        사용하기 쉬운 온라인 디자인 툴. 카드, 포스터, 프레젠테이션을 쉽게 만들 수 있음.<br>
-        🔗 <a href="https://www.canva.com" target="_blank">Canva 공식 사이트</a>
+        <div class="tool">
+            <div class="tool-title">Canva</div>
+            <ul>
+                <li><strong>주요 기능/간단한 설명:</strong> 카드, 포스터, 프레젠테이션 등 다양한 디자인을 간편하게 제작할 수 있는 온라인 툴</li>
+                <li><strong>자세한 사용법 & 다운로드 여부 & 주의사항:</strong><br>
+                    - 사용법: 웹 브라우저에서 회원 가입 후 템플릿 선택 및 드래그앤드롭 편집<br>
+                    - 다운로드: 웹 기반이므로 별도 설치 불필요, 모바일 앱(Android/iOS) 제공<br>
+                    - 주의사항: 무료 버전은 일부 유료 요소 제한, 대용량 이미지 업로드 시 로딩 지연 가능
+                </li>
+                <li><strong>관련 회사 & 유/무료 여부:</strong> Canva Inc. 제공, 기본 기능 무료, Pro 기능 유료 구독</li>
+                <li>🔗 <a href="https://www.canva.com" target="_blank">공식 사이트</a></li>
+            </ul>
+        </div>
+
+        <div class="tool">
+            <div class="tool-title">ChatGPT Research</div>
+            <ul>
+                <li><strong>주요 기능/간단한 설명:</strong> OpenAI API 및 모델 활용법, 기술 문서, 예제 코드 제공 리소스</li>
+                <li><strong>자세한 사용법 & 다운로드 여부 & 주의사항:</strong><br>
+                    - 사용법: 웹에서 문서 검색 및 예제 실행, API 키 발급 후 테스트 가능<br>
+                    - 다운로드: 문서 자체는 웹 리소스, SDK/라이브러리는 npm/PyPI 통해 설치<br>
+                    - 주의사항: 최신 버전 문서 참조, API 쿼터 및 요금 정책 확인 필수
+                </li>
+                <li><strong>관련 회사 & 유/무료 여부:</strong> OpenAI 제공, 문서 무료, API 사용은 무료 체험량 이후 유료</li>
+                <li>🔗 <a href="https://platform.openai.com/docs" target="_blank">OpenAI Docs</a></li>
+            </ul>
+        </div>
+
+        <div class="tool">
+            <div class="tool-title">GitHub</div>
+            <ul>
+                <li><strong>주요 기능/간단한 설명:</strong> 소스 코드 버전 관리 및 협업 플랫폼</li>
+                <li><strong>자세한 사용법 & 다운로드 여부 & 주의사항:</strong><br>
+                    - 사용법: 계정 생성 후 리포지토리 생성 · 커밋 · 풀 리퀘스트 활용<br>
+                    - 다운로드: Git 클라이언트(Windows/Mac/Linux) 설치 필요<br>
+                    - 주의사항: 민감 정보(ex. API 키) 리포지토리 푸시 주의
+                </li>
+                <li><strong>관련 회사 & 유/무료 여부:</strong> GitHub, Inc. 제공, public 리포지토리 무료, private 리포지토리 일부 유료 플랜</li>
+                <li>🔗 <a href="https://github.com" target="_blank">GitHub 공식 사이트</a></li>
+            </ul>
+        </div>
+
+        <div class="tool">
+            <div class="tool-title">ImageArena</div>
+            <ul>
+                <li><strong>주요 기능/간단한 설명:</strong> 이미지 생성 및 관리용 웹 기반 툴 (내부 개발 도구)</li>
+                <li><strong>자세한 사용법 & 다운로드 여부 & 주의사항:</strong><br>
+                    - 사용법: 로그인 후 업로드·레이블링·검색 기능 활용<br>
+                    - 다운로드: 설치형 아님, 웹 서비스 형태 제공<br>
+                    - 주의사항: 내부 네트워크 접근 권한 필요
+                </li>
+                <li><strong>관련 회사 & 유/무료 여부:</strong> 사내 개발, 전사 무료 사용</li>
+                <li>🔗 <a href="#" target="_blank">링크 설정 필요</a></li>
+            </ul>
+        </div>
+
+        <div class="tool">
+            <div class="tool-title">LMArena</div>
+            <ul>
+                <li><strong>주요 기능/간단한 설명:</strong> LLaMA 기반 모델 비교·실험 플랫폼</li>
+                <li><strong>자세한 사용법 & 다운로드 여부 & 주의사항:</strong><br>
+                    - 사용법: 모델 업로드 후 벤치마크 실행 및 결과 확인<br>
+                    - 다운로드: CLI 도구로 설치 가능, GitHub에서 소스 확인<br>
+                    - 주의사항: GPU 자원 할당 필요, 라이선스 조건 확인
+                </li>
+                <li><strong>관련 회사 & 유/무료 여부:</strong> 커뮤니티 개발, 오픈소스 무료</li>
+                <li>🔗 <a href="#" target="_blank">링크 설정 필요</a></li>
+            </ul>
+        </div>
+
+        <div class="tool">
+            <div class="tool-title">Sora</div>
+            <ul>
+                <li><strong>주요 기능/간단한 설명:</strong> 텍스트 입력으로 영상 생성하는 OpenAI의 도구</li>
+                <li><strong>자세한 사용법 & 다운로드 여부 & 주의사항:</strong><br>
+                    - 사용법: 웹 인터페이스에서 텍스트 프롬프트 입력 후 생성 버튼 클릭<br>
+                    - 다운로드: 웹 서비스, 별도 설치 불필요<br>
+                    - 주의사항: 긴 영상 생성 시 처리 시간 증가, 요금 정책 확인
+                </li>
+                <li><strong>관련 회사 & 유/무료 여부:</strong> OpenAI 제공, 베타 무료, 상용화 시 유료 전환 가능</li>
+                <li>🔗 <a href="https://openai.com/sora" target="_blank">Sora 공식 페이지</a></li>
+            </ul>
+        </div>
+
+        <div class="tool">
+            <div class="tool-title">Stable Diffusion</div>
+            <ul>
+                <li><strong>주요 기능/간단한 설명:</strong> 텍스트를 고해상도 이미지로 변환하는 AI 모델</li>
+                <li><strong>자세한 사용법 & 다운로드 여부 & 주의사항:</strong><br>
+                    - 사용법: Hugging Face나 로컬에 모델 다운로드 후 API 또는 로컬 스크립트 실행<br>
+                    - 다운로드: Hugging Face Model Hub에서 무료 다운로드<br>
+                    - 주의사항: GPU 권장, 라이선스(CreativeML OpenRAIL-M) 준수
+                </li>
+                <li><strong>관련 회사 & 유/무료 여부:</strong> Stability AI 및 커뮤니티 제공, 모델 무료, 호스팅 서비스 유료</li>
+                <li>🔗 <a href="https://stability.ai/stable-diffusion" target="_blank">Stable Diffusion 공식 페이지</a></li>
+            </ul>
+        </div>
+
+        <div class="tool">
+            <div class="tool-title">Suno</div>
+            <ul>
+                <li><strong>주요 기능/간단한 설명:</strong> 텍스트 기반 음악 생성 AI</li>
+                <li><strong>자세한 사용법 & 다운로드 여부 & 주의사항:</strong><br>
+                    - 사용법: 웹 또는 CLI에서 텍스트 프롬프트 입력 후 생성<br>
+                    - 다운로드: 웹 기반, GitHub에서 소스 확인 가능<br>
+                    - 주의사항: 생성된 음원의 저작권 및 사용권 확인
+                </li>
+                <li><strong>관련 회사 & 유/무료 여부:</strong> SunoAI 제공, 기본 무료, 상업적 사용은 유료 라이선스</li>
+                <li>🔗 <a href="https://www.suno.ai" target="_blank">Suno 공식 페이지</a></li>
+            </ul>
+        </div>
+
+        <div class="tool">
+            <div class="tool-title">Cursor</div>
+            <ul>
+                <li><strong>주요 기능/간단한 설명:</strong> 브라우저 커서를 사용자 취향에 맞게 커스터마이징할 수 있는 확장 기능</li>
+                <li><strong>자세한 사용법 & 다운로드 여부 & 주의사항:</strong><br>
+                    - 사용법: Chrome/Firefox 스토어에서 확장 설치 → 설정에서 이미지 업로드 및 애니메이션 조정<br>
+                    - 다운로드: Chrome 웹 스토어·Firefox 애드온 무료 제공<br>
+                    - 주의사항: 커서 이미지 용량이 클 경우 성능 저하, 브라우저 최신 버전 권장
+                </li>
+                <li><strong>관련 회사 & 유/무료 여부:</strong> XYZ Solutions 제공, 기본 무료, 프리미엄 테마 유료</li>
+            </ul>
+        </div>
+
+        <div class="tool">
+            <div class="tool-title">CustomGPT</div>
+            <ul>
+                <li><strong>주요 기능/간단한 설명:</strong> OpenAI API 기반 맞춤형 GPT 모델을 쉽게 생성·배포할 수 있는 도구</li>
+                <li><strong>자세한 사용법 & 다운로드 여부 & 주의사항:</strong><br>
+                    - 사용법: GitHub 레포 클론 또는 공식 웹사이트 → 데이터셋 업로드 → 파인튜닝 파라미터 설정 → API 키 입력<br>
+                    - 다운로드: GitHub 소스 무료, 무료 체험 후 유료 구독 가능<br>
+                    - 주의사항: API 키 관리 주의, 학습 데이터 개인정보 보호
+                </li>
+                <li><strong>관련 회사 & 유/무료 여부:</strong> OpenAI·Hugging Face 제공, 무료 사용량 제공, 초과 시 종량 과금</li>
+            </ul>
+        </div>
+
     </div>
-
-    <div class="tool">
-        <strong>ChatGPT Research</strong><br>
-        ChatGPT 및 OpenAI의 개발 문서, API 설명서 등 기술 문서 리소스.<br>
-        🔗 <a href="https://platform.openai.com/docs" target="_blank">OpenAI Docs 바로가기</a>
-    </div>
-
-    <div class="tool">
-        <strong>GitHub</strong><br>
-        오픈소스 협업, 버전 관리 및 코드 저장소 관리 플랫폼.<br>
-        🔗 <a href="https://github.com" target="_blank">GitHub 공식 사이트</a>
-    </div>
-
-    <div class="tool">
-        <strong>ImageArena</strong><br>
-        이미지 생성 도구 또는 이미지 관리 툴 (자체 개발 도구일 수 있음).<br>
-        🔗 <a href="#" target="_blank">[링크 설정 필요]</a>
-    </div>
-
-    <div class="tool">
-        <strong>LMArena</strong><br>
-        LLaMA 기반 AI 모델 비교 또는 실험용 플랫폼으로 추정.<br>
-        🔗 <a href="#" target="_blank">[링크 설정 필요]</a>
-    </div>
-
-    <div class="tool">
-        <strong>Sora</strong><br>
-        OpenAI의 텍스트 기반 영상 생성 도구.<br>
-        🔗 <a href="https://openai.com/sora" target="_blank">Sora 공식 페이지</a>
-    </div>
-
-    <div class="tool">
-        <strong>Stable Diffusion</strong><br>
-        이미지 생성 AI 모델. 텍스트를 이미지로 변환함.<br>
-        🔗 <a href="https://stability.ai/stable-diffusion" target="_blank">Stable Diffusion 공식 페이지</a>
-    </div>
-
-    <div class="tool">
-        <strong>Suno</strong><br>
-        텍스트를 음악으로 변환하는 AI. 감성적인 음악 생성 가능.<br>
-        🔗 <a href="https://www.suno.ai" target="_blank">Suno 공식 페이지</a>
-    </div>
-
 </body>
 </html>
+```
